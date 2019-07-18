@@ -1,0 +1,129 @@
+/*!!!! start of product-card CSS!!!!*/
+.product-image{
+  width:100%;
+  height:50%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100% 100%;
+
+}
+.product-card .product-title{
+  font-size: 35px;
+  color:black;
+  font-weight: 700;
+  font-family: 'Raleway';
+}
+
+.product-card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+  padding-bottom: 20px;
+  border-radius: 10px;
+}
+.product-card img{
+  height:50%;
+}
+.product-card .product-price {
+  margin-top:5px;
+  color: grey;
+  font-size: 22px;
+  font-family: 'Raleway';
+  font-weight: 500;
+
+}
+.product-card .product-vendor{
+  margin-top:-20px;
+  color: black;
+  font-size: 18px;
+  font-family: 'Raleway';
+  font-weight: 400;
+
+}
+
+.product-card button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: #FF4F4F;
+  text-align: center;
+  cursor: pointer;
+  width: 25%;
+  font-size: 18px;
+}
+
+.product-card button:hover {
+  opacity: 0.7;
+}
+
+/*!!!! end of product-card CSS!!!!*/
+
+/* !!!! start of popup form CSS !!!!*/
+
+{box-sizing: border-box;}
+
+/* Button used to open the contact form - fixed at the bottom of the page */
+
+
+/* The popup form - hidden by default */
+.form-popup {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  right: 15px;
+  border: 3px solid #f1f1f1;
+  z-index: 9;
+  font-family: 'Raleway';
+}
+
+/* Add styles to the form container */
+.form-container {
+  max-width: 300px;
+  padding: 10px;
+  background-color: white;
+}
+
+/* Full-width input fields */
+.form-container input[type=text], .form-container input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+}
+
+/* When the inputs get focus, do something */
+.form-container input[type=text]:focus, .form-container input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Set a style for the submit/login button */
+.form-container .btn {
+  background-color: #FF4F4F;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom:10px;
+  opacity: 0.8;
+}
+
+/* Add a red background color to the cancel button */
+.form-container .cancel{
+  border-color: #FF4F4F;
+  border: 2px solid;
+  color: #FF4F4F;
+  background-color: white;
+}
+
+/* Add some hover effects to buttons */
+.form-container .btn:hover, .open-button:hover {
+  opacity: 1;
+}
+
+/* !!! end of popup form CSS !!!*/
