@@ -1,7 +1,6 @@
 
 
-
-<<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
 
@@ -14,13 +13,26 @@
   </head>
   <body>
     <!-- Product card-->
-    <div class="product-card">
-      <div id="product-image" class="product-image"></div>
-      <div id="product-title" class="product-title"></div>
-      <p id="product-price" class="product-price"></p>
-      <p id="product-vendor" class="product-vendor"></p>
-      <p><button onclick="openForm()">Edit</button></p>
+    <div id="list">
+
+      <!--Generated list items will go here-->
     </div>
+
+    <script id="template-list-item" type="text/template">
+
+      <div>
+        <div class="product-column">
+        <div class="product-card">
+          <img src={{productImage}} id="product-image" class="product-image">
+          <div id="product-title" class="product-title">{{productTitle}}</div>
+          <p id="product-price" class="product-price">{{productPrice}}</p>
+          <p id="product-vendor" class="product-vendor">{{productVendor}}</p>
+          <p><button onclick="openForm()">Edit</button></p>
+        </div>
+      </div>
+
+    </script>
+
 
     <!-- Pop up Form-->
     <div class="form-popup" id="myForm">
@@ -40,6 +52,7 @@
         <button type="submit" class="btn cancel" onclick="closeForm()">Close</button>
       </form>
     </div>
+
 
     <script src="product-card.js" type="text/javascript">
     </script>
