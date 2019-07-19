@@ -1,0 +1,38 @@
+body {
+  font-family: 'Raleway', sans-serif;
+}
+.topnav {
+    overflow: hidden;
+    background-color: #FF4F4F;;
+    position: relative;
+  }
+  
+  .topnav #myLinks {
+    display: none;
+  }
+  
+  .topnav a {
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+  }
+  
+  .topnav a.icon {
+    background-color: #FF4F4F;;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  
+  .topnav a:hover {
+    background-color: rgb(236, 131, 131);
+    color: black;
+  }
+  
+  .active {
+    background-color: #FF4F4F;
+    color: white;
+  }
