@@ -23,11 +23,16 @@
       <div>
         <div class="product-column">
         <div class="product-card">
-          <img src={{productImage}} id="product-image" class="product-image">
+          <div class="container">
+           <img src={{productImage}} id="product-image" class="product-image">
+           <div class="middle">
+            <div class="text" onclick="openForm()">Details</div>
+           </div>
+          </div>
           <div id="product-title" class="product-title">{{productTitle}}</div>
           <p id="product-price" class="product-price">{{productPrice}}</p>
           <p id="product-vendor" class="product-vendor">{{productVendor}}</p>
-          <p><button onclick="openForm()">Edit</button></p>
+
         </div>
       </div>
 
