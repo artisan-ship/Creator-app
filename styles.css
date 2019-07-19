@@ -1,3 +1,6 @@
+
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,500,700');
+
 html {
   box-sizing: border-box;
 }
@@ -15,6 +18,10 @@ html {
 }
 
 .product-image{
+  transition: .5s ease;
+  backface-visibility: hidden;
+  opacity: 1;
+  display: block;
   width:100%;
   height:50%;
   background-repeat: no-repeat;
@@ -22,11 +29,44 @@ html {
   background-size: 100% 100%;
 
 }
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.container:hover .product-image {
+  opacity: 0.3;
+}
+
+.container:hover .middle {
+  opacity: 1;
+}
+.container {
+  background-color:#FF4F4F;
+
+  position: relative;
+}
+.text {
+  border-color: white;
+  border: 2px solid;
+  border-radius: 5px;
+  color: white;
+  background-color:rgba(255, 255, 255, 0.4);
+  font-size: 16px;
+  padding: 16px 32px;
+}
 .product-card .product-title{
-  font-size: 35px;
+  margin-top: 10px;
+  font-size: 25px;
   color:black;
   font-weight: 700;
-  font-family: 'Raleway';
+  font-family: 'Roboto';
 }
 
 .product-card {
@@ -59,9 +99,10 @@ html {
 }
 
 .product-card button {
+  margin: auto;
+  padding: 16px 32px;
   border: none;
   outline: 0;
-  padding: 12px;
   color: white;
   background-color: #FF4F4F;
   text-align: center;
