@@ -3,6 +3,7 @@
 <head>
 <link rel="stylesheet" href="styles-tabs.css">
 
+<link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet'>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
 
@@ -14,25 +15,36 @@
 <button class="tablink" onclick="openPage('about', this, 'rgb(221, 36, 36'),'white'">About us</button>
 <button class="tablink" onclick="openPage('creator-tab', this, 'rgb(221, 36, 36'),'white'" id="defaultOpen">Creators</button>
 <button class="tablink" onclick="openPage('stories', this, 'rgb(221, 36, 36'),'white'">Stories</button>
-<button class="tablink" onclick="openPage('About', this, 'rgb(221, 36, 36'),'white'">About</button>
+<button class="tablink" onclick="openPage('options', this, 'rgb(221, 36, 36'),'white'">Options</button>
  </div>
-  <div id="about" class="tabcontent">
+  <div id="about" class="tabcontent-1">
+  <div class="tab-part-1">
   <h1>Lorem ipsum dolor sit amet</h1>
 
   <h2>Lorem ipsum dolor </h2>
   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-  <br>
+</div>
+
+  <div class="tab-part-2">
   <h2>Lorem ipsum dolor </h2>
   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-
+</div>
 
 
   
 </div>
 
-<div id="creator-tab" class="tabcontent">
-       <div class="tab-wrapper">
+<div id="creator-tab" class="tabcontent-1">
+
+    <div class="tab-part-1">
+        <h1>Lorem ipsum dolor sit amet</h1>
+      
+        <h2>Lorem ipsum dolor </h2>
+        <p>Lorem ipsum dolor incididunt ut laborinimco laboris nisi ut do consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      </div>
+       <div class="tab-wrapper-2">
+     
        <div class="creator-image">
         <img src="https://www.w3schools.com/howto/img_avatar.png">
        </div>
@@ -41,8 +53,8 @@
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
         </div>
        </div>
-       <br>
-       <div class="tab-wrapper">
+   
+       <div class="tab-wrapper-2">
            <div class="creator-image">
             <img src="https://www.w3schools.com/howto/img_avatar.png">
            </div>
@@ -51,21 +63,58 @@
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
            </div>
         </div>
-   
-
+  
+        <div class="tab-part-2">
+            <h2>Lorem ipsum dolor </h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          </div>
 </div>
 
-<div id="stories" class="tabcontent">
-        <div w3-include-html="story-carousel.html"></div> 
+<div id="stories" class="tabcontent-1">
+    <div class="tab-wrapper-3">
+        <div class="tab-part-1">
+            <h1>Lorem ipsum dolor sit amet</h1>
+          
+            <h2>Lorem ipsum dolor </h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore</p>
+            <div class="text-2" onclick="openForm()">See all stories</div>
+          </div>
+        <h1 style="margin: auto; text-align: center;margin-top: 10px; font-family: Quicksand;">Most Popular Articles</h1>
+    <div id="list" class="tab-part-2">
 
+        <!--Generated list items will go here-->
+ 
+      <script id="template-list-item" type="text/template">
+       
+        <div>
+          <div class="story-column">
+          <div class="story-card">
+            <div class="container">
+             <img src={{storyImage}} id="story-image" class="story-image">
+             <div class="middle">
+              <div class="text" onclick="openForm()">Read</div>
+             </div>
+            </div>
+            <div id="story-title" class="story-title">{{storyTitle}}</div>
+            <p id="story-price" class="story-price">{{storySub}}</p>
+            <p id="story-vendor" class="story-vendor">{{storyDetails}}</p>
+      
+          </div>
+        </div>
+      
+      </script>
+    </div>
+  </div> 
+</div>
 
-<div id="reviews" class="tabcontent">
+<div id="options" class="tabcontent">
   <h3>About</h3>
   <p>Who we are and what we do.</p>
 </div>
 </div>
 </div>
 <script src="tabs.js"></script>
-   
+
+
 </body>
 </html> 
