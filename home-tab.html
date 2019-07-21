@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="styles-tabs.css">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+
+</style>
+</head>
+<body>
+<div class="tab_wrapper">
+ <div class="tabs">
+<button class="tablink" onclick="openPage('about', this, 'rgb(221, 36, 36'),'white'">About us</button>
+<button class="tablink" onclick="openPage('creator-tab', this, 'rgb(221, 36, 36'),'white'" id="defaultOpen">Creators</button>
+<button class="tablink" onclick="openPage('stories', this, 'rgb(221, 36, 36'),'white'">Stories</button>
+<button class="tablink" onclick="openPage('About', this, 'rgb(221, 36, 36'),'white'">About</button>
+ </div>
+  <div id="about" class="tabcontent">
+  <h1>Lorem ipsum dolor sit amet</h1>
+
+  <h2>Lorem ipsum dolor </h2>
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+  <br>
+  <h2>Lorem ipsum dolor </h2>
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+
+
+  
+</div>
+
+<div id="creator-tab" class="tabcontent">
+       <div class="tab-wrapper">
+       <div class="creator-image">
+        <img src="https://www.w3schools.com/howto/img_avatar.png">
+       </div>
+        <div class="creator-text">
+         <h1>Lorem ipsum dolor sit amet</h1>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
+       </div>
+       <br>
+       <div class="tab-wrapper">
+           <div class="creator-image">
+            <img src="https://www.w3schools.com/howto/img_avatar.png">
+           </div>
+           <div class="creator-text">
+            <h1>Lorem ipsum dolor sit amet</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+           </div>
+        </div>
+   
+
+</div>
+
+<div id="stories" class="tabcontent">
+        <div w3-include-html="story-carousel.html"></div> 
+
+
+<div id="reviews" class="tabcontent">
+  <h3>About</h3>
+  <p>Who we are and what we do.</p>
+</div>
+</div>
+</div>
+<script src="tabs.js"></script>
+   
+</body>
+</html> 
