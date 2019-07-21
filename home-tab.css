@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+@import url('https://fonts.googleapis.com/css?family=Quicksand');
+@import url('https://fonts.googleapis.com/css?family=Lora');
+@import url('https://fonts.googleapis.com/css?family=Yantramanav');
+@import url('https://fonts.googleapis.com/css?family=Caudex');
+
 * {box-sizing: border-box}
 
 
@@ -26,16 +32,11 @@ html {
 .card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
-
-.container {
-  padding: 0 16px;
+#list{
+  margin-bottom: 20px;
+  padding-bottom: 175px;
 }
 
-.container::after, .row::after {
-  content: "";
-  clear: both;
-  display: table;
-}
 
 .title {
   color: grey;
@@ -73,6 +74,9 @@ body, html {
 }
 /* Style tab links */
 .tablink {
+  font-family: 'Quicksand';
+
+  font-weight: 600;
   background-color: rgb(238, 230, 230);
   color: black;
   float: left;
@@ -92,7 +96,7 @@ body, html {
 }
 
 .tablink:hover {
-  background-color: #6db19c;
+  background-color: rgb(105, 179, 157);
 }
 
 /* Style the tab content (and add height:100% for full page content) */
@@ -100,7 +104,10 @@ body, html {
   margin-bottom: 10px;
   color: black;
   display: none;
-  padding: 100px 20px;
+  padding-top: 100px;
+  padding-left: 100px;
+  padding-right: 100px;
+
   height: 100%;
   margin-top: 30px;
   border-bottom: 1px solid;
@@ -120,7 +127,28 @@ body, html {
 .tab-wrapper{
   
     width: 100%;
-    padding-bottom: 250px;
+    padding-bottom: 200px;
+    padding-top: 100px;
+    padding-left: 100px;
+    padding-right: 100px;
+    margin-bottom: 20px;
+}
+
+.tab-wrapper-2{
+  margin-top: 30px;
+  width: 100%;
+  padding-bottom: 200px;
+  padding-top: 30px;
+  padding-left: 100px;
+  padding-right: 100px;
+  margin-bottom: 20px;
+}
+.tab-wrapper-3{
+  margin-top: 30px;
+  width: 100%;
+  padding-bottom: 200px;
+
+  margin-bottom: 20px;
 }
 .creator-image{
     float:left;
@@ -133,6 +161,7 @@ body, html {
     float:right;
     padding-bottom: 50px;
     width: 70%;
+    font-family: 'Yantramanav';
 }
 
 .creator-image img {
@@ -148,3 +177,193 @@ body, html {
 #creator-tab {background-color: white;}
 #stories {background-color: white;}
 #About {background-color: white;}
+
+.tab-part-1{
+  background-color: #50b194;
+  width: 100%;
+  padding: 50px;
+  color: white;
+  text-align: center;
+  border-top-right-radius: 40px;
+  border-top-left-radius: 40px;
+  
+}
+
+.tab-part-2{
+  background-color: #f8f8f8;
+  width: 100%;
+  padding: 30px;
+  font-family: 'Yantramanav';
+
+
+}
+
+.tab-part-1 h1{
+  font-family: 'Quicksand';
+  font-weight: 700;
+
+}
+
+
+.tab-part-1 h2{
+  font-family: 'Caudex';
+  font-weight: 300;
+
+}
+
+.tab-part-1 p{
+  font-family: 'Yantramanav';
+
+
+}
+
+
+.tabcontent-1 {
+  margin-bottom: 10px;
+  color: black;
+  display: none;
+
+  padding-bottom: 10px;
+  height: 100%;
+  margin-top: 30px;
+ 
+  
+  border-bottom-left-radius: 20px ;
+  border-bottom-right-radius: 20px ;
+  border-top-right-radius: 50px;
+  border-top-left-radius: 50px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+
+}
+
+.text-2 {
+  width: 20%;
+  margin: auto;
+  border-color: white;
+  border: 2px solid;
+  border-radius: 5px;
+  color: white;
+  background-color:rgba(255, 255, 255, 0.4);
+  font-size: 16px;
+  padding: 16px 32px;
+  opacity:  0.7;
+}
+.text-2:hover{
+  transition: .5s ease;
+  opacity:  1;
+
+}
+
+
+
+.story-column {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+.story-image{
+  border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+  transition: .5s ease;
+  backface-visibility: hidden;
+  opacity: 1;
+  display: block;
+  width:100%;
+  height:225px !important;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100% 100%;
+
+}
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.container:hover .story-image {
+  opacity: 0.3;
+}
+
+.container:hover .middle {
+  opacity: 1;
+}
+.container {
+  background-color:#50b194;
+
+  position: relative;
+}
+.text {
+  border-color: white;
+  border: 2px solid;
+  border-radius: 5px;
+  color: white;
+  background-color:rgba(255, 255, 255, 0.4);
+  font-size: 16px;
+  padding: 16px 32px;
+}
+.story-card .story-title{
+  margin-top: 10px;
+  font-size: 25px;
+  color:black;
+  font-weight: 700;
+  font-family: 'Montserrat';
+}
+
+.story-card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+  padding-bottom: 20px;
+  border-radius: 10px;
+}
+.story-card img{
+  height:50%;
+}
+.story-card .story-price {
+  margin-top:5px;
+  color: grey;
+  font-size: 22px;
+  font-family: 'Raleway';
+  font-weight: 500;
+
+}
+.story-card .story-vendor{
+  margin-top:-20px;
+  color: black;
+  font-size: 18px;
+  font-family: 'Raleway';
+  font-weight: 400;
+
+}
+
+.story-card button {
+  margin: auto;
+  padding: 16px 32px;
+  border: none;
+  outline: 0;
+  color: white;
+  background-color: #FF4F4F;
+  text-align: center;
+  cursor: pointer;
+  width: 25%;
+  font-size: 18px;
+}
+
+.story-card button:hover {
+  opacity: 0.7;
+}
+
+.container{
+  border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
