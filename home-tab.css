@@ -1,0 +1,150 @@
+* {box-sizing: border-box}
+
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.column {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.container {
+  padding: 0 16px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #555;
+}
+
+/* Set height of body and the document to 100% */
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: Arial;
+}
+.tab_wrapper{
+    margin: auto;
+    width:70%;
+
+    
+    
+  
+}
+/* Style tab links */
+.tablink {
+  background-color: rgb(238, 230, 230);
+  color: black;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  font-size: 17px;
+  width: 25%;
+  border-bottom: 3px solid;
+  border-bottom-color: #747776;
+  border-top-right-radius: 4px;
+  border-top-left-radius: 4px;
+  
+
+
+}
+
+.tablink:hover {
+  background-color: #6db19c;
+}
+
+/* Style the tab content (and add height:100% for full page content) */
+.tabcontent {
+  margin-bottom: 10px;
+  color: black;
+  display: none;
+  padding: 100px 20px;
+  height: 100%;
+  margin-top: 30px;
+  border-bottom: 1px solid;
+  border-left: 1px solid;
+  border-right: 1px solid;
+  border-color:rgb(238, 230, 230);
+  
+  border-bottom-left-radius: 20px ;
+  border-bottom-right-radius: 20px ;
+  border-top-right-radius: 50px;
+  border-top-left-radius: 50px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+
+}
+
+
+.tab-wrapper{
+  
+    width: 100%;
+    padding-bottom: 250px;
+}
+.creator-image{
+    float:left;
+    padding-bottom: 50px;
+    width: 30%;
+    
+}
+
+.creator-text{
+    float:right;
+    padding-bottom: 50px;
+    width: 70%;
+}
+
+.creator-image img {
+ 
+  width:80%;
+  border-radius: 50%;
+}
+
+#creator-tab br{
+    padding-bottom: 100px;
+}
+#about {background-color: white;}
+#creator-tab {background-color: white;}
+#stories {background-color: white;}
+#About {background-color: white;}
