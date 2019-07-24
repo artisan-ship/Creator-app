@@ -1,0 +1,143 @@
+@font-face {
+  font-family: Fake_Serif;
+  src: url(fonts/Fake_Serif.ttf);
+}
+@import url(//db.onlinewebfonts.com/c/29dc27977e417a98e56556776f41607c?family=Corbel);
+
+}
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+body, html {
+    height: 100%;
+}
+
+
+
+
+
+
+
+
+/* Add a black background color to the top navigation */
+.topnav {
+  background-color: rgb(26, 26, 26,0.4);
+  overflow: hidden;
+  font-family: Corbel;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: right;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 8px 36px;
+  text-decoration: none;
+  font-size: 17px;
+}
+.topnav img{
+  margin-left: 20px;
+  float:left;
+  height: 35px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  font-weight: 700;
+
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+
+
+}
+
+
+
+
+
+
+
+
+/* The hero image */
+.hero-image {
+  /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
+  background-image:  url("img/background-home-01.png");
+
+  /* Set a specific height */
+  height: 400px;
+
+  /* Position and center the image to scale nicely on all screens */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+/* Place text in the middle of the image */
+.hero-text {
+
+  font-family: Corbel;
+  text-align: center;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
+.hero-text .logo-text{
+  margin-top: 150px;
+  font-weight: 500;
+  font-size: 130px;
+  font-family: Fake_Serif;
+  padding-bottom: 15px;
+  margin-bottom: -20px;
+
+}
+
+.hero-text .sub-text{
+  margin-left: 20%;
+  margin-right: 20%;
+}
+
+.hero-text button{
+  margin-top: 20px;
+  color: white;
+  font-family: Corbel;
+  background:rgb(128, 128, 128,0.2);
+  border: 2px solid white;
+  padding: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-radius: 20px;
+}
+.hero-button-left{
+  margin-right: 10%;
+
+}
+.hero-button-right{
+  margin-left: 10%;
+}
+
+.hero-text button:hover{
+  background-color: white;
+  color: black;
+}
+
+.section .heading h1{
+  padding: 20px;
+  text-align: center;
+  margin: auto;
+  font-size: 60px;
+  font-family: Montserrat;
+  font-weight: 700;
+  color: #433B3B;
+  width: 40%;
+}
+.section .heading p{
+  text-align: center;
+  margin: auto;
+  font-size: 18px;
+  font-family: Corbel;
+  width: 50%;
+}
