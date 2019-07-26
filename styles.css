@@ -428,7 +428,50 @@ margin:auto;
   padding: 0 8px;
 }
 
+.section .how-to-section .row .column{
+  font-family: Corbel;
+  text-align: center;
+  width:25%;
+  float:left;
+  color: rgb(33,34,36,0.9);
+  padding: 0 8px;
+  font-size:15px;
+}
+.section .how-to-section .icon{
+  margin: auto;
+  margin-top: 20px;
+  height: 105px;
+  width: 105px;
+  background-color: white;
+  border-radius: 50%;
+}
 
+
+.button-more{
+  background-color: rgb(222, 220, 199,0.0);
+  color: white;
+  border: 2px solid black;
+  margin-top: 20px;
+
+  font-size: 20px;
+  font-family: Corbel;
+  background-image:  url("img/background-home-01.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border:none;
+
+  padding: 10px;
+  padding-left: 30px;
+  padding-right: 30px;
+  border-radius: 40px;
+  
+}
+
+.button-more:hover{
+  color: white;
+  opacity: 0.5;
+}
 
 html {
   box-sizing: border-box;
